@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oraculo</title>
+    <!--  FONTS FROM GOOGLE FONTS  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;800&family=Poppins:ital,wght@0,200;0,400;1,600;1,800&display=swap" rel="stylesheet">
+    <!--  BOOTSTRAP CSS FILES  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--  CUSTOM CSS  -->
+    <link rel="stylesheet" href="css/misEstilos.css">
+    <!--  CDN Font Awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <main>
+            <h1 class="text-center mt-4">💲 ORACULO USDT 💲</h1>
+            <div class="d-flex justify-content-evenly mt-5">
+                <!-- Caja grande izquierda -->
+                <div class="caja-izquierda rounded-2 px-4">
+                    <!-- Cabeceras del box -->
+                    <div class="head-box d-flex justify-content-between mt-4">
+                        <p class="p-head-description">VALOR 1 a 1</p>
+                        <div class="box-description-time d-flex">
+                            <p>Proxima actualizacion en:</p>
+                            <i class="fa-solid fa-clock"></i>
+                            <p class="p-actualizacion">1800s</p>
+                        </div>
+                    </div>
+                    <!-- Box de importes - son dos box -->
+                    <div class="box-imports d-flex justify-content-between align-items-center mt-5">
+                        <div class="box-p-left ps-3 pt-2">
+                            <p class="fw-bold" style="color: #16a085;">$ USDT</p>
+                            <p class="fs-3 mt-2" style="font-weight: 500; color: #34495e">$ 1</p>
+                        </div>
+                        <span><i class="fa-solid fa-right-long" style="color: #8e44ad; font-size: 35px;"></i></span>
+                        <div class="box-p-right ps-3 pt-2">
+                            <p class="fw-bold" style="color: #2ecc71;">$ BRL</p>
+                            <p class="fs-3 mt-2" style="font-weight: 500; color: #34495e" id="precio-real-usdt">$ ***</p>
+                        </div>
+                    </div>
+                    <div class="texto-aviso-actualizacion px-2 mt-4 text-center">
+                        <p style="color: #7f8c8d; font-size: 11px">La cotizacion se actualiza cada 30 minutos.
+                            Si no queres esperar podes volver a consultar con el boton que esta abajo
+                        </p>
+                        <button class="btn btn-success mt-4 px-5">RECARGAR</button>
+                    </div>
+                </div>
+
+                <!-- Caja grande derecha -->
+                <div class="caja-derecha rounded-2 px-4">
+                    <div class="head-box d-flex justify-content-between mt-4">
+                        <p class="p-head-description">POR MONTO</p>
+                        <div class="box-description-time d-flex">
+                            <p>Proxima actualizacion en:</p>
+                            <i class="fa-solid fa-clock"></i>
+                            <p class="p-actualizacion">1800s</p>
+                        </div>
+                    </div>
+
+                    <div class="box-imports d-flex justify-content-between align-items-center mt-5">
+                        <div class="box-p-left ps-3 pt-2">
+                            <p class="fw-bold" style="color: #16a085;">V1</p>
+                            <p class="fs-3 mt-2" style="font-weight: 500; color: #34495e">$ ***</p>
+                        </div>
+                        <span><i class="fa-solid fa-right-long" style="color: #8e44ad; font-size: 35px;"></i></span>
+                        <div class="box-p-right ps-3 pt-2">
+                            <p class="fw-bold" style="color: #2ecc71;">V2</p>
+                            <p class="fs-3 mt-2" style="font-weight: 500; color: #34495e">$ ***</p>
+                        </div>
+                    </div>
+
+                    <div class="checks-items d-flex justify-content-between mt-3">
+                        <div class="checks-left">
+                            <div class="usdt-brl">
+                                <input type="checkbox" id="checkbox-1" class="i-check"/>
+                                <label for="checkbox-1" style="font-size: 11px">USDT TO BRL</label>
+                            </div>
+                            <div class="ars-brl">
+                                <input type="checkbox" id="checkbox-2" class="i-check"/>
+                                <label for="checkbox-2" style="font-size: 11px">ARS TO BRL</label>
+                            </div>
+                        </div>
+                        <div class="checks-right">
+                            <div class="brl-usdt">
+                                <input type="checkbox" id="checkbox-3" class="i-check"/>
+                                <label for="checkbox-3" style="font-size: 11px">BRL TO USDT</label>
+                            </div>
+                            <div class="brl-ars">
+                                <input type="checkbox" id="checkbox-4" class="i-check"/>
+                                <label for="checkbox-4" style="font-size: 11px">BRL TO ARS</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box-input-btn d-flex gap-3 mt-3">
+                        <input type="text" class="form-control" aria-describedby="inputGroup-sizing-sm" placeholder="introduci el importe">
+                        <button class="btn btn-primary me-3" style="width: 160px;">CONSULTAR</button>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <p class="badge bg-info">Power by por Adrian A. y Christian I.</p>
+            </footer>
+        </main>
+    </div>
+
+    <!--  BOOTSTRAP JS  -->
+    <script src="js/bootstrap.js"></script>
+    <!--  CUSTOM JS  -->
+    <script src="js/main.js"></script>
+</body>
+</html>
