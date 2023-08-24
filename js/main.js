@@ -46,7 +46,6 @@ const addEventsChecksboxs = () => {
 
 btnConsultar.addEventListener("click", () => {
     if(!inputValor.value || !parValor){
-        // alert.style.display = "block"
         return
     }
 
