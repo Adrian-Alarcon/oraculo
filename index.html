@@ -24,12 +24,7 @@
                 <div class="caja-izquierda rounded-2 px-4">
                     <!-- Cabeceras del box -->
                     <div class="head-box d-flex justify-content-between mt-4">
-                        <p class="p-head-description">VALOR 1 a 1</p>
-                        <div class="box-description-time d-flex">
-                            <p>Proxima actualizacion en:</p>
-                            <i class="fa-solid fa-clock"></i>
-                            <p class="p-actualizacion">1800s</p>
-                        </div>
+                        <p class="p-head-description">VALOR 1️⃣ a 1️⃣</p>
                     </div>
                     <!-- Box de importes - son dos box -->
                     <div class="box-imports d-flex justify-content-between align-items-center mt-5">
@@ -54,57 +49,56 @@
                 <!-- Caja grande derecha -->
                 <div class="caja-derecha rounded-2 px-4">
                     <div class="head-box d-flex justify-content-between mt-4">
-                        <p class="p-head-description">POR MONTO</p>
-                        <div class="box-description-time d-flex">
-                            <p>Proxima actualizacion en:</p>
-                            <i class="fa-solid fa-clock"></i>
-                            <p class="p-actualizacion">1800s</p>
-                        </div>
+                        <p class="p-head-description">POR MONTO 💸</p>
                     </div>
 
                     <div class="box-imports d-flex justify-content-between align-items-center mt-5">
                         <div class="box-p-left ps-3 pt-2">
                             <p class="fw-bold" style="color: #16a085;">V1</p>
-                            <p class="fs-3 mt-2" style="font-weight: 500; color: #34495e">$ ***</p>
+                            <p class="fs-4 mt-2" style="font-weight: 500; color: #34495e" id="valorAConvertir">$ ***</p>
                         </div>
                         <span><i class="fa-solid fa-right-long" style="color: #8e44ad; font-size: 35px;"></i></span>
                         <div class="box-p-right ps-3 pt-2">
                             <p class="fw-bold" style="color: #2ecc71;">V2</p>
-                            <p class="fs-3 mt-2" style="font-weight: 500; color: #34495e">$ ***</p>
+                            <p class="fs-4 mt-2" style="font-weight: 500; color: #34495e" id="valorConvertido">$ ***</p>
                         </div>
                     </div>
 
                     <div class="checks-items d-flex justify-content-between mt-3">
                         <div class="checks-left">
                             <div class="usdt-brl">
-                                <input type="checkbox" id="checkbox-1" class="i-check"/>
-                                <label for="checkbox-1" style="font-size: 11px">USDT TO BRL</label>
+                                <input type="checkbox" id="USDTBRL" class="i-check"/>
+                                <label for="USDTBRL" style="font-size: 11px">USDT TO BRL</label>
                             </div>
                             <div class="ars-brl">
-                                <input type="checkbox" id="checkbox-2" class="i-check"/>
-                                <label for="checkbox-2" style="font-size: 11px">ARS TO BRL</label>
+                                <input type="checkbox" id="ARSBRL" class="i-check"/>
+                                <label for="ARSBRL" style="font-size: 11px">ARS TO BRL</label>
                             </div>
                         </div>
                         <div class="checks-right">
                             <div class="brl-usdt">
-                                <input type="checkbox" id="checkbox-3" class="i-check"/>
-                                <label for="checkbox-3" style="font-size: 11px">BRL TO USDT</label>
+                                <input type="checkbox" id="BRLUSDT" class="i-check"/>
+                                <label for="BRLUSDT" style="font-size: 11px">BRL TO USDT</label>
                             </div>
                             <div class="brl-ars">
-                                <input type="checkbox" id="checkbox-4" class="i-check"/>
-                                <label for="checkbox-4" style="font-size: 11px">BRL TO ARS</label>
+                                <input type="checkbox" id="BRLARS" class="i-check"/>
+                                <label for="BRLARS" style="font-size: 11px">BRL TO ARS</label>
                             </div>
                         </div>
                     </div>
 
                     <div class="box-input-btn d-flex gap-3 mt-3">
-                        <input type="text" class="form-control" aria-describedby="inputGroup-sizing-sm" placeholder="introduci el importe">
-                        <button class="btn btn-primary me-3" style="width: 160px;">CONSULTAR</button>
+                        <input type="text" class="form-control" aria-describedby="inputGroup-sizing-sm" placeholder="introduci el importe" id="input-valor">
+                        <button class="btn btn-primary me-3" style="width: 160px;" id="btn-consultar">CONSULTAR</button>
                     </div>
                 </div>
             </div>
 
-            <footer>
+            <footer class="">
+                <div class="alert alert-danger alert-dismissible fade show" role="alert" style="width: 700px;">
+                    <strong>ERROR!</strong> Selecciona un par para consultar.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
                 <p class="badge bg-info">Power by por Adrian A. y Christian I.</p>
             </footer>
         </main>
