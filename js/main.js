@@ -46,19 +46,18 @@ const addEventsChecksboxs = () => {
 
 btnConsultar.addEventListener("click", () => {
     if(!inputValor.value || !parValor){
-        alert.style.display = "block"
+        // alert.style.display = "block"
         return
     }
 
     const mount = inputValor.value
-
     valorConvertir.textContent = `$ ${mount}`
 })
 
 
 const iniciarOraculo = async () => {
     const dataResponse = await consultarCotizacion("1", "USDTBRL")
-    // console.log(dataResponse)
+    console.log(dataResponse)
     precioReales.textContent = `$ ${dataResponse.data.total_brl}`
 }
 
