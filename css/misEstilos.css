@@ -16,7 +16,7 @@ h1 {
 
 .caja-derecha {
     width: 900px;
-    height: 30vh;
+    height: 70vh;
     background-color: #ecf0f1;
 }
 
@@ -61,6 +61,15 @@ h1 {
     margin-left: 10px;
     margin-right: 5px;
     color: #8e44ad;
+}
+
+.checks-items {
+    width: 500px;
+}
+
+input[type="text"] {
+    height: 100px;
+    font-size: 3rem;
 }
 
 footer {
