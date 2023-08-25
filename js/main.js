@@ -1,5 +1,6 @@
 let precioReales = document.getElementById("precio-real-usdt")
 const checksBox = document.querySelectorAll('input[type="checkbox"]')
+const btnRecargar = document.getElementById("btn-recargar")
 const btnConsultar = document.getElementById("btn-consultar")
 const inputValor = document.getElementById("input-valor")
 const alert = document.querySelector("footer .alert")
@@ -48,19 +49,13 @@ btnConsultar.addEventListener("click", () => {
     if(!inputValor.value || !parValor){
         return
     }
-
     const mount = inputValor.value
     valorConvertir.textContent = `$ ${mount}`
 })
 
 
-const iniciarOraculo = async () => {
-    const dataResponse = await consultarCotizacion("1", "USDTBRL")
-    console.log(dataResponse)
-    precioReales.textContent = `$ ${dataResponse.data.total_brl}`
-}
 
 
-addEventsChecksboxs()
-iniciarOraculo()
+// addEventsChecksboxs()
+// iniciarOraculo()
 // consultarCotizacion(importeConsultar, "USDTBRL")
