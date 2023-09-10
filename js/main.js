@@ -78,7 +78,6 @@ btnConsultar.addEventListener("click", async () => {
             valorConvertido.textContent = responseOraculo.data.total_ars
             break
     }
-
 })
 
 
